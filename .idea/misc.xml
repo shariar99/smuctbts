@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/almua/AndroidStudioProjects/BusLocation/app/src/main/res/drawable/bus_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/almua/AndroidStudioProjects/BusLocation/app/src/main/res/drawable/bus_icon2.xml" value="0.3828125" />
+        <entry key="..\:/Users/almua/AndroidStudioProjects/BusLocation/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/almua/AndroidStudioProjects/BusLocation/app/src/main/res/layout/activity_map_show.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/almua/AndroidStudioProjects/BusLocation/app/src/main/res/layout/activity_maps.xml" value="0.36666666666666664" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/drawable/ic_email.xml" value="0.15" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/drawable/ic_launcher_background.xml" value="0.15" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/drawable/ic_lock.xml" value="0.15" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/drawable/ic_person.xml" value="0.15" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/drawable/id.xml" value="0.15" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/drawable/round_border.xml" value="0.158" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/drawable/splash_activity_background.xml" value="0.1" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/drawable/splash_theme.xml" value="0.158" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/drawable/wave.xml" value="0.158" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/drawable/wavesign.xml" value="0.1" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.12" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/layout-w936dp/activity_login.xml" value="0.126171875" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/layout/activity_forget_pass.xml" value="0.18229166666666666" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/layout/activity_map_show.xml" value="0.16822916666666668" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/layout/activity_maps.xml" value="0.3333333333333333" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/layout/activity_singup.xml" value="0.22" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/layout/activity_splash.xml" value="0.18229166666666666" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/layout/fragment_home.xml" value="0.18229166666666666" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/layout/toast.xml" value="0.4466666666666667" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/menu/bottom_nav_menu.xml" value="0.18229166666666666" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher_1.xml" value="0.15" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.15" />
+        <entry key="..\:/android studio/BusLocation-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round_1.xml" value="0.15" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

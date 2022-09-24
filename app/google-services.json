@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1081494240392",
+    "project_id": "bus-tracker-bb70d",
+    "storage_bucket": "bus-tracker-bb70d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081494240392:android:7a7c47b0bcb9ccbbe9333d",
+        "android_client_info": {
+          "package_name": "com.approxsoft.buslocation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081494240392-udf55e21rfq2rfo9oanmip9i39nnmlpv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB53UTzMCy9ws4Uevu6QAtV8HZySEHzF_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081494240392-udf55e21rfq2rfo9oanmip9i39nnmlpv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
