@@ -100,9 +100,6 @@ public class Login extends AppCompatActivity {
             }
         });
 
-
-
-
     }
     public void signUpBtn(View view){
         Intent intent = new Intent(Login.this,SignUp.class);
