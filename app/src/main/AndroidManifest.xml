@@ -16,10 +16,12 @@
         android:theme="@style/Theme.BusLocation">
         <activity
             android:name=".forgetPass"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Login"/>
         <activity
             android:name=".SignUp"
             android:exported="false"
+            android:parentActivityName=".Login"
             />
         <activity
             android:name=".Login"
@@ -35,7 +37,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:label="@string/title_activity_splash_screen"
             android:parentActivityName=".Login" />
 
         <meta-data

@@ -96,12 +96,6 @@ public class SignUp extends AppCompatActivity {
                         }
                     });
                 }
-//                else {
-//                    progressBar.setVisibility(View.INVISIBLE);
-//                    Toast.makeText(SignUp.this, "Please Enter ID and PASSWORD", Toast.LENGTH_LONG).show();
-//
-//                }
-
 
             }
         });
@@ -122,8 +116,6 @@ public class SignUp extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(SignUp.this,Login.class);
-        startActivity(intent);
         finish();
         super.onBackPressed();
     }

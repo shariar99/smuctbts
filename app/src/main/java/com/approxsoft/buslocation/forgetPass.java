@@ -43,15 +43,21 @@ public class forgetPass extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 progressBar.setVisibility(View.VISIBLE);
-                mAuth.sendPasswordResetEmail(email.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            progressBar.setVisibility(View.INVISIBLE);
-                            Toast.makeText(forgetPass.this, "Successfully send ", Toast.LENGTH_SHORT).show();
+
+                if (email.getText().toString().isEmpty()) {
+                    progressBar.setVisibility(View.INVISIBLE);
+                    Toast.makeText(forgetPass.this, "Please Enter Your Email", Toast.LENGTH_SHORT).show();
+                } else {
+                    mAuth.sendPasswordResetEmail(email.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()) {
+                                progressBar.setVisibility(View.INVISIBLE);
+                                Toast.makeText(forgetPass.this, "Successfully send ", Toast.LENGTH_SHORT).show();
+                            }
                         }
-                    }
-                });
+                    });
+                }
             }
         });
     }
