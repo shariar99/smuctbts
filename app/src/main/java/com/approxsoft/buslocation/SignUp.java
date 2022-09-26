@@ -60,6 +60,9 @@ public class SignUp extends AppCompatActivity {
             }
         });
 
+
+
+
         logInBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -68,25 +71,38 @@ public class SignUp extends AppCompatActivity {
 
                 progressBar.setVisibility(View.VISIBLE);
 
+                if(email.getText().toString().isEmpty() || password.getText().toString().isEmpty()){
+                    progressBar.setVisibility(View.INVISIBLE);
+                    Toast.makeText(SignUp.this, "Enter pass and id", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    mAuth.createUserWithEmailAndPassword(email.getText().toString().concat(sm),password.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
-                mAuth.createUserWithEmailAndPassword(email.getText().toString().concat(sm),password.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
-
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task)
-                    {
-                        if (task.isSuccessful()){
-                            Toast.makeText(SignUp.this, "Successfully Sign Up", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(SignUp.this,MainActivity.class);
-                            startActivity(intent);
-                            progressBar.setVisibility(View.INVISIBLE);
-                        }else
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task)
                         {
-                            progressBar.setVisibility(View.INVISIBLE);
-                            Toast.makeText(SignUp.this, "Please Enter Right ID or PASSWORD", Toast.LENGTH_LONG).show();
+                            if (task.isSuccessful()){
+                                Toast.makeText(SignUp.this, "Successfully Sign Up", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(SignUp.this,MainActivity.class);
+                                startActivity(intent);
+                                progressBar.setVisibility(View.INVISIBLE);
+                            }else
+                            {
+                                progressBar.setVisibility(View.INVISIBLE);
+                                Toast.makeText(SignUp.this, "Please Enter Right ID or PASSWORD", Toast.LENGTH_LONG).show();
+                            }
                         }
-                    }
-                });
+                    });
+                }
+//                else {
+//                    progressBar.setVisibility(View.INVISIBLE);
+//                    Toast.makeText(SignUp.this, "Please Enter ID and PASSWORD", Toast.LENGTH_LONG).show();
+//
+//                }
+
+
             }
         });
 

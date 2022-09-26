@@ -72,28 +72,31 @@ public class Login extends AppCompatActivity {
         logInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              progressBar.setVisibility(View.VISIBLE);
+                progressBar.setVisibility(View.VISIBLE);
+
+                if (email.getText().toString().isEmpty() || password.getText().toString().isEmpty()) {
+                    progressBar.setVisibility(View.INVISIBLE);
+                    Toast.makeText(Login.this, "Enter pass and id", Toast.LENGTH_SHORT).show();
+                } else {
+
+                    mAuth.signInWithEmailAndPassword(email.getText().toString().concat(sm), password.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(Login.this, "Successfully Log In", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(Login.this, MainActivity.class);
+                                progressBar.setVisibility(View.INVISIBLE);
+                                startActivity(intent);
+                            } else {
+                                progressBar.setVisibility(View.INVISIBLE);
+
+                                Toast.makeText(Login.this, "Please Enter Right ID or PASSWORD", Toast.LENGTH_LONG).show();
 
 
-                mAuth.signInWithEmailAndPassword(email.getText().toString().concat(sm),password.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task)
-                    {
-                        if (task.isSuccessful()){
-                            Toast.makeText(Login.this, "Successfully Log In", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(Login.this,MainActivity.class);
-                            progressBar.setVisibility(View.INVISIBLE);
-                            startActivity(intent);
-                        }else
-                        {
-                            progressBar.setVisibility(View.INVISIBLE);
-
-                            Toast.makeText(Login.this,"Please Enter Right ID or PASSWORD", Toast.LENGTH_LONG).show();
-
-
+                            }
                         }
-                    }
-                });
+                    });
+                }
             }
         });
 
