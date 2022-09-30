@@ -29,15 +29,12 @@ public class MainActivity extends AppCompatActivity {
     TextView busTrack, busLocation;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         mAuth = FirebaseAuth.getInstance();
-
-        getSupportActionBar().show();
 
 
 
