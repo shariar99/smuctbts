@@ -105,7 +105,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         }
                     }catch (Exception e)
                     {
-                        Toast.makeText(MapsActivity.this,e.getMessage(),Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(MapsActivity.this,e.getMessage(),Toast.LENGTH_SHORT).show();
                     }
 
                 }
